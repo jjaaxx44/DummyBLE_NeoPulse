@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,13 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryVC" customModule="DummyBLE_NeoPulse" customModuleProvider="target">
             <connections>
+                <outlet property="chartView" destination="rmo-LH-709" id="xfu-m6-ep3"/>
+                <outlet property="deviceImage" destination="TuU-So-R3u" id="NRN-Ds-OQB"/>
                 <outlet property="segmentControl" destination="OQE-UI-AK4" id="ArP-4K-Yq7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyz-k3-9y6">
@@ -69,7 +71,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OQE-UI-AK4">
-                    <rect key="frame" x="10" y="194" width="355" height="29"/>
+                    <rect key="frame" x="10" y="194" width="300" height="29"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <segments>
                         <segment title="Hourly"/>
@@ -78,10 +80,17 @@
                         <segment title="Monthly"/>
                     </segments>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="segmentValueChanged:" destination="-1" eventType="valueChanged" id="BmE-gD-LrL"/>
+                    </connections>
                 </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmo-LH-709" customClass="LineChartView" customModule="Charts">
+                    <rect key="frame" x="10" y="232" width="300" height="276"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BEA-tH-eeZ">
-                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="2gH-LO-PXQ"/>
                         <constraint firstAttribute="height" constant="40" id="eBS-fz-ZCV"/>
@@ -96,11 +105,15 @@
                 <constraint firstItem="Lg0-cA-eYc" firstAttribute="centerY" secondItem="ORM-4k-tdl" secondAttribute="centerY" id="40I-Qb-e3U"/>
                 <constraint firstItem="OQE-UI-AK4" firstAttribute="top" secondItem="ORM-4k-tdl" secondAttribute="bottom" constant="30" id="GL6-Qj-gHW"/>
                 <constraint firstItem="IGl-QZ-174" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Lkh-x5-YJC"/>
+                <constraint firstItem="rmo-LH-709" firstAttribute="top" secondItem="OQE-UI-AK4" secondAttribute="bottom" constant="10" id="Qti-yR-pYz"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OQE-UI-AK4" secondAttribute="trailing" constant="10" id="Sre-tJ-HD0"/>
                 <constraint firstItem="BEA-tH-eeZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="V1S-Qw-0dm"/>
                 <constraint firstItem="BEA-tH-eeZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Z8X-3p-DoT"/>
+                <constraint firstItem="rmo-LH-709" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Zmr-O5-yC3"/>
                 <constraint firstItem="IGl-QZ-174" firstAttribute="centerY" secondItem="wyz-k3-9y6" secondAttribute="centerY" id="d0W-iI-gad"/>
                 <constraint firstItem="Lg0-cA-eYc" firstAttribute="leading" secondItem="ORM-4k-tdl" secondAttribute="trailing" constant="20" id="fyE-Zc-nXg"/>
+                <constraint firstItem="BEA-tH-eeZ" firstAttribute="top" secondItem="rmo-LH-709" secondAttribute="bottom" constant="20" id="i69-5i-Zef"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rmo-LH-709" secondAttribute="trailing" constant="10" id="ncS-x9-o7M"/>
                 <constraint firstItem="hHd-Do-6n0" firstAttribute="leading" secondItem="TuU-So-R3u" secondAttribute="trailing" constant="15" id="oaA-6r-8pe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BEA-tH-eeZ" secondAttribute="trailing" id="reX-9o-ie2"/>
                 <constraint firstItem="OQE-UI-AK4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="tor-TP-q8H"/>

@@ -46,5 +46,10 @@ extension UIColor {
     class var blueHR: UIColor {
         return UIColor(rgb: 0x1DAFEC)
     }
-    
+    class var chartLine: UIColor {
+        return UIColor(rgb: 0x7577AA)
+    }
+    class var chartDot: UIColor {
+        return UIColor(rgb: 0x1DAFEC)
+    }
 }

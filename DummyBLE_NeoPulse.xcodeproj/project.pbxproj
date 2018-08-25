@@ -18,9 +18,11 @@
 		55CBC17C2130F9F4007BA829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC17B2130F9F4007BA829 /* Assets.xcassets */; };
 		55CBC17F2130F9F4007BA829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC17D2130F9F4007BA829 /* LaunchScreen.storyboard */; };
 		55CBC1872130FA2A007BA829 /* DashBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC1862130FA2A007BA829 /* DashBoardVC.xib */; };
+		C77B5B363B20FABA25ABDB12 /* Pods_DummyBLE_NeoPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B46AEFDAE9F8AD0E499CD6AE /* Pods_DummyBLE_NeoPulse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DB748468893EE5E786273BD /* Pods-DummyBLE_NeoPulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DummyBLE_NeoPulse.release.xcconfig"; path = "Pods/Target Support Files/Pods-DummyBLE_NeoPulse/Pods-DummyBLE_NeoPulse.release.xcconfig"; sourceTree = "<group>"; };
 		552D2B782131225A0005897A /* History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = History.png; sourceTree = "<group>"; };
 		552D2B792131225A0005897A /* DashBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DashBoard.png; sourceTree = "<group>"; };
 		552D2B7C213123740005897A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		55CBC17E2130F9F4007BA829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55CBC1802130F9F4007BA829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CBC1862130FA2A007BA829 /* DashBoardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardVC.xib; sourceTree = "<group>"; };
+		B46AEFDAE9F8AD0E499CD6AE /* Pods_DummyBLE_NeoPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DummyBLE_NeoPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB14C1517C450EC0DC7E238C /* Pods-DummyBLE_NeoPulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DummyBLE_NeoPulse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DummyBLE_NeoPulse/Pods-DummyBLE_NeoPulse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77B5B363B20FABA25ABDB12 /* Pods_DummyBLE_NeoPulse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,8 @@
 				55CBC1732130F9F2007BA829 /* DummyBLE_NeoPulse */,
 				552D2B77213122150005897A /* Support */,
 				55CBC1722130F9F2007BA829 /* Products */,
+				EA72AB3CA1A5491ACD399C5C /* Pods */,
+				626294BD26C94BD3CF6A971F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +105,23 @@
 			path = DummyBLE_NeoPulse;
 			sourceTree = "<group>";
 		};
+		626294BD26C94BD3CF6A971F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B46AEFDAE9F8AD0E499CD6AE /* Pods_DummyBLE_NeoPulse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA72AB3CA1A5491ACD399C5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB14C1517C450EC0DC7E238C /* Pods-DummyBLE_NeoPulse.debug.xcconfig */,
+				2DB748468893EE5E786273BD /* Pods-DummyBLE_NeoPulse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55CBC1832130F9F4007BA829 /* Build configuration list for PBXNativeTarget "DummyBLE_NeoPulse" */;
 			buildPhases = (
+				ECD7D4759569C0A153E07886 /* [CP] Check Pods Manifest.lock */,
 				55CBC16D2130F9F2007BA829 /* Sources */,
 				55CBC16E2130F9F2007BA829 /* Frameworks */,
 				55CBC16F2130F9F2007BA829 /* Resources */,
+				42DC9B9DF7A56F016C7BFA14 /* [CP] Embed Pods Frameworks */,
+				FA84359EFAF170C85D6D08FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,6 +193,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42DC9B9DF7A56F016C7BFA14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DummyBLE_NeoPulse/Pods-DummyBLE_NeoPulse-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DummyBLE_NeoPulse/Pods-DummyBLE_NeoPulse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECD7D4759569C0A153E07886 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DummyBLE_NeoPulse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA84359EFAF170C85D6D08FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DummyBLE_NeoPulse/Pods-DummyBLE_NeoPulse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55CBC16D2130F9F2007BA829 /* Sources */ = {
@@ -310,14 +391,12 @@
 		};
 		55CBC1842130F9F4007BA829 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB14C1517C450EC0DC7E238C /* Pods-DummyBLE_NeoPulse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Support/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EmptyXIBProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -327,14 +406,12 @@
 		};
 		55CBC1852130F9F4007BA829 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB748468893EE5E786273BD /* Pods-DummyBLE_NeoPulse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Support/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EmptyXIBProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

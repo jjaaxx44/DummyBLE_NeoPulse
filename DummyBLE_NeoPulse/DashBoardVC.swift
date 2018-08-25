@@ -25,6 +25,11 @@ class DashBoardVC: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         setupUI()
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        historyButtonClicked(UIButton())
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
