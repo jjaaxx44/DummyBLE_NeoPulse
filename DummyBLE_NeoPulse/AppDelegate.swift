@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var viewController:ViewController?
+    var viewController:DashBoardVC?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.black
 
-        viewController = ViewController(nibName: "ViewController", bundle: nil)
+        viewController = DashBoardVC(nibName: "DashBoardVC", bundle: nil)
         
         window?.rootViewController = viewController
         

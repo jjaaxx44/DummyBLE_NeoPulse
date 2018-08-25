@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/jax/Desktop/BLEDemo Netpulse/DummyBLE_NeoPulse.xcodeproj">
+      location = "self:/Users/jax/Desktop/DummyBLE_NeoPulse/DummyBLE_NeoPulse.xcodeproj">
    </FileRef>
 </Workspace>

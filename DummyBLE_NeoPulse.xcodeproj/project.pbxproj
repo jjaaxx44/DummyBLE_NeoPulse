@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		552D2B7A2131225A0005897A /* History.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D2B782131225A0005897A /* History.png */; };
+		552D2B7B2131225A0005897A /* DashBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D2B792131225A0005897A /* DashBoard.png */; };
 		55CBC1752130F9F2007BA829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CBC1742130F9F2007BA829 /* AppDelegate.swift */; };
-		55CBC1772130F9F2007BA829 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CBC1762130F9F2007BA829 /* ViewController.swift */; };
+		55CBC1772130F9F2007BA829 /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CBC1762130F9F2007BA829 /* DashBoardVC.swift */; };
 		55CBC17C2130F9F4007BA829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC17B2130F9F4007BA829 /* Assets.xcassets */; };
 		55CBC17F2130F9F4007BA829 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC17D2130F9F4007BA829 /* LaunchScreen.storyboard */; };
-		55CBC1872130FA2A007BA829 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC1862130FA2A007BA829 /* ViewController.xib */; };
+		55CBC1872130FA2A007BA829 /* DashBoardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC1862130FA2A007BA829 /* DashBoardVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		552D2B782131225A0005897A /* History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = History.png; sourceTree = "<group>"; };
+		552D2B792131225A0005897A /* DashBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DashBoard.png; sourceTree = "<group>"; };
 		55CBC1712130F9F2007BA829 /* DummyBLE_NeoPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyBLE_NeoPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CBC1742130F9F2007BA829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55CBC1762130F9F2007BA829 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55CBC1762130F9F2007BA829 /* DashBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
 		55CBC17B2130F9F4007BA829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55CBC17E2130F9F4007BA829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55CBC1802130F9F4007BA829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55CBC1862130FA2A007BA829 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		55CBC1862130FA2A007BA829 /* DashBoardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashBoardVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,10 +39,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552D2B762131220E0005897A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		552D2B77213122150005897A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				552D2B792131225A0005897A /* DashBoard.png */,
+				552D2B782131225A0005897A /* History.png */,
+				55CBC17B2130F9F4007BA829 /* Assets.xcassets */,
+				55CBC17D2130F9F4007BA829 /* LaunchScreen.storyboard */,
+				55CBC1802130F9F4007BA829 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		55CBC1682130F9F2007BA829 = {
 			isa = PBXGroup;
 			children = (
 				55CBC1732130F9F2007BA829 /* DummyBLE_NeoPulse */,
+				552D2B77213122150005897A /* Support */,
 				55CBC1722130F9F2007BA829 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,11 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				55CBC1742130F9F2007BA829 /* AppDelegate.swift */,
-				55CBC1762130F9F2007BA829 /* ViewController.swift */,
-				55CBC1862130FA2A007BA829 /* ViewController.xib */,
-				55CBC17B2130F9F4007BA829 /* Assets.xcassets */,
-				55CBC17D2130F9F4007BA829 /* LaunchScreen.storyboard */,
-				55CBC1802130F9F4007BA829 /* Info.plist */,
+				55CBC1762130F9F2007BA829 /* DashBoardVC.swift */,
+				55CBC1862130FA2A007BA829 /* DashBoardVC.xib */,
+				552D2B762131220E0005897A /* Helpers */,
 			);
 			path = DummyBLE_NeoPulse;
 			sourceTree = "<group>";
@@ -122,8 +144,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552D2B7A2131225A0005897A /* History.png in Resources */,
+				552D2B7B2131225A0005897A /* DashBoard.png in Resources */,
 				55CBC17F2130F9F4007BA829 /* LaunchScreen.storyboard in Resources */,
-				55CBC1872130FA2A007BA829 /* ViewController.xib in Resources */,
+				55CBC1872130FA2A007BA829 /* DashBoardVC.xib in Resources */,
 				55CBC17C2130F9F4007BA829 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55CBC1772130F9F2007BA829 /* ViewController.swift in Sources */,
+				55CBC1772130F9F2007BA829 /* DashBoardVC.swift in Sources */,
 				55CBC1752130F9F2007BA829 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +297,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DummyBLE_NeoPulse/Info.plist;
+				INFOPLIST_FILE = Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DummyBLE_NeoPulse/Info.plist;
+				INFOPLIST_FILE = Support/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
