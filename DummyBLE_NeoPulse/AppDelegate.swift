@@ -13,17 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var viewController:DashBoardVC?
+    var navController:UINavigationController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        window = UIWindow(frame: UIScreen.main.bounds)
+        window = UIWindow(frame: Constants.GENERAL.SCREEN_SIZE)
         window?.backgroundColor = UIColor.black
 
         viewController = DashBoardVC(nibName: "DashBoardVC", bundle: nil)
+        navController = UINavigationController(rootViewController: viewController!)
+        navController?.setNavigationBarHidden(true, animated: false)
         
-        window?.rootViewController = viewController
-        
+        window?.rootViewController = navController
+
         window?.makeKeyAndVisible()
 
         return true

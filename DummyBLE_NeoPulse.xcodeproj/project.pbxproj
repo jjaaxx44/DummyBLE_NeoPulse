@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		552D2B7A2131225A0005897A /* History.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D2B782131225A0005897A /* History.png */; };
 		552D2B7B2131225A0005897A /* DashBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D2B792131225A0005897A /* DashBoard.png */; };
+		552D2B7D213123740005897A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D2B7C213123740005897A /* Extensions.swift */; };
+		552D2B7F213123800005897A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D2B7E213123800005897A /* Constants.swift */; };
+		552D2B82213149CD0005897A /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552D2B80213149CD0005897A /* HistoryVC.swift */; };
+		552D2B83213149CD0005897A /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 552D2B81213149CD0005897A /* HistoryVC.xib */; };
 		55CBC1752130F9F2007BA829 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CBC1742130F9F2007BA829 /* AppDelegate.swift */; };
 		55CBC1772130F9F2007BA829 /* DashBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CBC1762130F9F2007BA829 /* DashBoardVC.swift */; };
 		55CBC17C2130F9F4007BA829 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CBC17B2130F9F4007BA829 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		552D2B782131225A0005897A /* History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = History.png; sourceTree = "<group>"; };
 		552D2B792131225A0005897A /* DashBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DashBoard.png; sourceTree = "<group>"; };
+		552D2B7C213123740005897A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		552D2B7E213123800005897A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		552D2B80213149CD0005897A /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		552D2B81213149CD0005897A /* HistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
 		55CBC1712130F9F2007BA829 /* DummyBLE_NeoPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DummyBLE_NeoPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CBC1742130F9F2007BA829 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CBC1762130F9F2007BA829 /* DashBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardVC.swift; sourceTree = "<group>"; };
@@ -42,6 +50,8 @@
 		552D2B762131220E0005897A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				552D2B7C213123740005897A /* Extensions.swift */,
+				552D2B7E213123800005897A /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -81,6 +91,8 @@
 				55CBC1742130F9F2007BA829 /* AppDelegate.swift */,
 				55CBC1762130F9F2007BA829 /* DashBoardVC.swift */,
 				55CBC1862130FA2A007BA829 /* DashBoardVC.xib */,
+				552D2B80213149CD0005897A /* HistoryVC.swift */,
+				552D2B81213149CD0005897A /* HistoryVC.xib */,
 				552D2B762131220E0005897A /* Helpers */,
 			);
 			path = DummyBLE_NeoPulse;
@@ -147,6 +159,7 @@
 				552D2B7A2131225A0005897A /* History.png in Resources */,
 				552D2B7B2131225A0005897A /* DashBoard.png in Resources */,
 				55CBC17F2130F9F4007BA829 /* LaunchScreen.storyboard in Resources */,
+				552D2B83213149CD0005897A /* HistoryVC.xib in Resources */,
 				55CBC1872130FA2A007BA829 /* DashBoardVC.xib in Resources */,
 				55CBC17C2130F9F4007BA829 /* Assets.xcassets in Resources */,
 			);
@@ -160,7 +173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CBC1772130F9F2007BA829 /* DashBoardVC.swift in Sources */,
+				552D2B82213149CD0005897A /* HistoryVC.swift in Sources */,
+				552D2B7D213123740005897A /* Extensions.swift in Sources */,
 				55CBC1752130F9F2007BA829 /* AppDelegate.swift in Sources */,
+				552D2B7F213123800005897A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
