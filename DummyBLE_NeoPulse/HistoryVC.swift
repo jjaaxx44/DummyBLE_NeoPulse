@@ -77,8 +77,7 @@ class HistoryVC: UIViewController {
     }
 
 
-    func setChartValues(_ count : Int = 20) {
-
+    func setChartValues(_ count : Int = 20) {//random values for demo pupose
         let values = (0..<count).map { (i) -> ChartDataEntry in
             let val = Double(arc4random_uniform(UInt32(count))+60)
             return ChartDataEntry(x: Double(i), y: val)
@@ -90,13 +89,6 @@ class HistoryVC: UIViewController {
         set1.circleRadius = 4.0
         set1.lineWidth = 1.5
         
-        
-        let fmt = NumberFormatter()
-        fmt.numberStyle = .decimal
-        fmt.maximumFractionDigits = 0
-        fmt.groupingSeparator = ","
-        fmt.decimalSeparator = "."
-
         set1.valueFormatter = CustomIntFormatter()
         
         let data = LineChartData(dataSet: set1)
@@ -111,7 +103,8 @@ class HistoryVC: UIViewController {
     
 }
 
-
+//MARK: - custom format classes
+// custom formats for chart display
 class CustomIntFormatter: NSObject, IValueFormatter{
     
     func stringForValue(_ value: Double, entry: ChartDataEntry, dataSetIndex: Int, viewPortHandler: ViewPortHandler?) -> String {
